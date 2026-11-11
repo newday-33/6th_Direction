@@ -1,0 +1,42 @@
+<!doctype html>
+<html lang="ko">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>What are you going to do? · 6학년 9단원</title>
+  <meta name="description" content="천재(함) 6학년 9단원 What are you going to do? — 계획 말하기 활동 카드와 발음 연습">
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🍁</text></svg>">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Comic+Neue:wght@400;700&display=swap">
+  <link rel="stylesheet" href="https://hangeul.pstatic.net/hangeul_static/css/nanum-square-round.css">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header class="hero">
+    <div id="leaves" class="leaves" aria-hidden="true"></div>
+    <div class="hero-inner">
+      <p class="unit">🍁 천재(함) 6학년 9단원</p>
+      <h1 class="en">What are you going to do?</h1>
+      <p class="pattern"><span class="en">What are you going to do ___?</span> → <span class="en">I'm going to ___.</span></p>
+    </div>
+  </header>
+
+  <nav class="tabs" role="tablist" aria-label="화면 고르기">
+    <button type="button" class="tab active" role="tab" data-tab="easy" aria-selected="true"><span class="long">🎨 활동 카드 (초급)</span><span class="short">초급 카드</span></button>
+    <button type="button" class="tab" role="tab" data-tab="mid" aria-selected="false"><span class="long">🎨 활동 카드 (중급)</span><span class="short">중급 카드</span></button>
+    <button type="button" class="tab" role="tab" data-tab="practice" aria-selected="false"><span class="long">🎤 연습하기</span><span class="short">연습하기</span> <span id="plan-badge" class="badge">0/5</span></button>
+  </nav>
+
+  <main>
+    <div id="panel-easy" class="panel" role="tabpanel"></div>
+    <div id="panel-mid" class="panel" role="tabpanel" hidden></div>
+    <div id="panel-practice" class="panel" role="tabpanel" hidden></div>
+  </main>
+
+  <footer class="foot no-print">그림: Canva로 만든 그림 · 단어를 누르면 뜻과 발음이 나와요 · 말하기는 Chrome + 마이크 권한이 필요해요</footer>
+
+  <script src="data.js"></script>
+  <script src="app.js"></script>
+</body>
+</html>
